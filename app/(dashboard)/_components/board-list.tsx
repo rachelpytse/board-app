@@ -21,7 +21,10 @@ export const BoardList = ({
     orgId,
     query,
 }: BoardListProps) => {
-    const data = useQuery(api.boards.get, {orgId})
+    const data = useQuery(api.boards.get, {
+        orgId,
+        ...query,
+    })
 
     //data will never be undefined unless it is loading
     //because if there is really no data, convex will return null

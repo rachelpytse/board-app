@@ -6,8 +6,10 @@ import { useOrganization } from "@clerk/nextjs"
 import { Button } from "@/components/ui/button"
 import { useApiMutation } from "@/hooks/use-api-mutation"
 import { toast } from "sonner"
+import { useRouter } from "next/navigation"
 
 export const EmptyBoards = () => {
+    const router = useRouter()
     const {organization} = useOrganization()
     //useMutation can also work too but here we use hook method
     //using hook method instead of useMutation it will be simpler and less code but we couldn't get the types to work so we lose types
@@ -22,7 +24,7 @@ export const EmptyBoards = () => {
         })
             .then((id) => {
                 toast.success("Board created")
-                //TODO: redirect to board/{id}
+                router.push(`/board/${id}`)
             })
             .catch((error) => toast.error("Failed to create board"))
     }
