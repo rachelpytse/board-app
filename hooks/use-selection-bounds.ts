@@ -3,7 +3,7 @@ import {shallow} from "@liveblocks/react"
 import {Layer, XYWH} from "@/types/canvas"
 import { useStorage, useSelf } from "@/liveblocks.config"
 
-const boudingBox = (layers: Layer[]): XYWH | null => {
+const boundingBox = (layers: Layer[]): XYWH | null => {
     const first = layers[0]
 
     if(!first) {
@@ -51,6 +51,6 @@ export const useSelectionBounds = () => {
             .map((layerId) => root.layers.get(layerId)!)
             .filter(Boolean)
 
-            return boudingBox(selectedLayers)
+            return boundingBox(selectedLayers)
     }, shallow)
 }
