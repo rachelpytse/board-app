@@ -13,6 +13,7 @@ import { Toolbar } from "./toolbar"
 import { CursorsPresence } from "./cursors-presence"
 import { LiveObject } from "@liveblocks/core"
 import { LayerPreview } from "./layer-previes"
+import { SelectionBox } from "./selection-box"
 
 const MAX_LAYERS = 100
 
@@ -193,6 +194,9 @@ export const Canvas = ({
                             selectionColor={layerIdtoColorSelection[layerId]}
                         />
                     ))}
+                    <SelectionBox
+                        onResizeHandlePointerDown={() => {}}
+                    />
                     <CursorsPresence/>
                 </g>
             </svg>
