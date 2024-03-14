@@ -7,7 +7,7 @@ import Image from "next/image"
 import { Poppins } from "next/font/google"
 
 import { cn } from "@/lib/utils"
-import { Hint } from "@/components/auth/hint"
+import { Hint } from "@/components/hint"
 import { api } from "@/convex/_generated/api"
 import { Actions } from "@/components/actions"
 import { Button } from "@/components/ui/button"
