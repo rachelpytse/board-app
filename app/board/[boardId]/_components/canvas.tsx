@@ -12,7 +12,7 @@ import { Participants } from "./participants"
 import { Toolbar } from "./toolbar"
 import { CursorsPresence } from "./cursors-presence"
 import { LiveObject } from "@liveblocks/core"
-import { LayerPreview } from "./layer-previes"
+import { LayerPreview } from "./layer-preview"
 import { SelectionBox } from "./selection-box"
 import { SelectionTools } from "./selection-tools"
 
