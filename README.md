@@ -1,4 +1,9 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Deployed app link
+
+Try the app -> [Board](https://board-app-xi.vercel.app)
+
+![Board](board.png)
+
 
 ## Getting Started
 
